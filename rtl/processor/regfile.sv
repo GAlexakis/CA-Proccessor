@@ -1,5 +1,5 @@
 `ifdef MODEL_TECH
-	`include "../includes/sys_defs.vh"
+	`include "../sys_defs.vh"
 `endif
 
 module regfile(
@@ -29,7 +29,6 @@ always_ff @(posedge clk or posedge rst) begin : Write_port
 	end
 end
 	initial begin
-
 		$monitor("
 			r0: %32b\n 
 			r1: %32b\n 

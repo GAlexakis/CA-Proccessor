@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/intelFPGA/computer_architecture/rtl/simulation
 valu
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1678025005
+Z2 !s110 1678029911
 !i10b 1
 !s100 Ek]CE[=@OA3c_dZb5NQSY3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,7 +19,7 @@ IcVkHXImEW>`2f=Dmz`>dJ1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1678009888
+Z5 w1678028928
 Z6 8../processor/ex_stage.sv
 Z7 F../processor/ex_stage.sv
 !i122 0
@@ -28,8 +28,8 @@ Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1678025005.000000
-!s107 processor_tb.sv|memory.sv|../processor/processor.sv|../processor/wb_stage.sv|../processor/mem_stage.sv|../processor/ex_stage.sv|../processor/id_stage.sv|../processor/regfile.sv|../processor/if_stage.sv|../includes/sys_defs.vh|
+Z9 !s108 1678029911.000000
+!s107 processor_tb.sv|memory.sv|../processor/processor.sv|../processor/wb_stage.sv|../processor/mem_stage.sv|../processor/ex_stage.sv|../processor/id_stage.sv|../processor/regfile.sv|../processor/if_stage.sv|../sys_defs.vh|
 Z10 !s90 -reportprogress|300|-f|files_rtl.f|
 !i113 1
 Z11 tCvgOpt 0
@@ -53,7 +53,7 @@ r1
 !s85 0
 31
 R9
-Z12 !s107 processor_tb.sv|memory.sv|../processor/processor.sv|../processor/wb_stage.sv|../processor/mem_stage.sv|../processor/ex_stage.sv|../processor/id_stage.sv|../processor/regfile.sv|../processor/if_stage.sv|../includes/sys_defs.vh|
+Z12 !s107 processor_tb.sv|memory.sv|../processor/processor.sv|../processor/wb_stage.sv|../processor/mem_stage.sv|../processor/ex_stage.sv|../processor/id_stage.sv|../processor/regfile.sv|../processor/if_stage.sv|../sys_defs.vh|
 R10
 !i113 1
 R11
@@ -67,7 +67,7 @@ ICP[a6OW09nlYJi=RGz:WG2
 R4
 S1
 R0
-Z13 w1678014933
+Z13 w1678028810
 Z14 8../processor/id_stage.sv
 Z15 F../processor/id_stage.sv
 !i122 0
@@ -91,7 +91,7 @@ I5G7=61A3Bll`;7@8cK]0_0
 R4
 S1
 R0
-Z16 w1678008561
+Z16 w1678028569
 8../processor/if_stage.sv
 F../processor/if_stage.sv
 !i122 0
@@ -211,7 +211,7 @@ I4@V_bnOYaUmHId3T[9Vcj0
 R4
 S1
 R0
-w1678022767
+R16
 8processor_tb.sv
 Fprocessor_tb.sv
 !i122 0
@@ -229,17 +229,17 @@ vregfile
 R1
 R2
 !i10b 1
-!s100 iDh>;ObhV720?0oaZV>Do3
+!s100 KkWTSgPG4aLUj^2R[;USD2
 R3
-IJdNUnR8EcMOz:>Wm[Qf2J2
+IV:1HK30iH;0VI3gMHTiNG1
 R4
 S1
 R0
-w1678021368
+w1678028973
 8../processor/regfile.sv
 F../processor/regfile.sv
 !i122 0
-L0 5 96
+L0 5 95
 R8
 r1
 !s85 0

@@ -1,5 +1,5 @@
 `ifdef MODEL_TECH
-	`include "../includes/sys_defs.vh"
+	`include "../sys_defs.vh"
 `endif
 
 module if_stage  (input logic 	      clk,             // system clk

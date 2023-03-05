@@ -1,5 +1,5 @@
 `ifdef MODEL_TECH
-	`include "../includes/sys_defs.vh"
+	`include "../sys_defs.vh"
 `endif
 
 module processor_tb;

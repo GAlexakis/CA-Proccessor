@@ -1,4 +1,4 @@
-../includes/sys_defs.vh
+../sys_defs.vh
 
 ../processor/if_stage.sv
 ../processor/regfile.sv

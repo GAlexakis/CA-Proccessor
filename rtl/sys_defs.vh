@@ -15,7 +15,6 @@
 `define MEM_32BIT_LINES        (`MEM_SIZE_IN_BYTES/4)
 
 
-// the Alpha register file zero register, any read of this register always
 // returns a zero value, and any write to this register is thrown away
 //
 `define ZERO_REG        5'd00
@@ -59,7 +58,6 @@
 `define SRA_INST    {3'h5, 7'h20}
 `define SLT_INST    {3'h2, 7'h00}
 `define SLTU_INST   {3'h3, 7'h00}
-
 `define MUL_INST    {3'h0, 7'h01}
 `define MULH_INST   {3'h1, 7'h01}
 
