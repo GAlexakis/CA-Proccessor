@@ -51,6 +51,8 @@ always_comb begin
 				`SRA_INST  : alu_func = `ALU_SRA;   
 				`SLT_INST  : alu_func = `ALU_SLT;   
 				`SLTU_INST : alu_func = `ALU_SLTU;
+				`MUL_INST  : alu_func = `ALU_MUL;
+				`MULH_INST : alu_func = `ALU_MULH;
 				default: illegal = `TRUE;
 			endcase 
 		end //R-TYPE
