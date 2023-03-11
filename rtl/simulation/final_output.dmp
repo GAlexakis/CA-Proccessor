@@ -28,10 +28,11 @@ Disassembly of section .text:
   34:	00600993          	li	s3,6
   38:	03298a33          	mul	s4,s3,s2
   3c:	03299ab3          	mulh	s5,s3,s2
-  40:	7ff00913          	li	s2,2047
-  44:	7ff00993          	li	s3,2047
-  48:	03390b33          	mul	s6,s2,s3
-  4c:	032b0b33          	mul	s6,s6,s2
-  50:	032b1bb3          	mulh	s7,s6,s2
-  54:	00008067          	ret
+  40:	7ffff937          	lui	s2,0x7ffff
+  44:	7ffff9b7          	lui	s3,0x7ffff
+  48:	7ff90913          	addi	s2,s2,2047 # 7ffff7ff <func+0x7ffff7cf>
+  4c:	7ff98993          	addi	s3,s3,2047 # 7ffff7ff <func+0x7ffff7cf>
+  50:	03298a33          	mul	s4,s3,s2
+  54:	03299ab3          	mulh	s5,s3,s2
+  58:	00008067          	ret
 	...
