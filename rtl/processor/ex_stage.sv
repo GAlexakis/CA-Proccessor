@@ -113,7 +113,7 @@ always_comb begin
 		`ALU_SLT: 	result = {31'd0, ($signed(opa)< $signed(opb))};
 		`ALU_SLTU:	result = {31'd0, (opa < opb)};
 		`ALU_MUL:	result = temp[31:0];
-		`ALU_MULH:	result = temp[63:32];
+		`ALU_MULHU:	result = temp[63:32];
 		default: 	result = 32'hbaadbeef;  
 	endcase	
 end

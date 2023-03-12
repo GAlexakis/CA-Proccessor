@@ -59,7 +59,7 @@
 `define SLT_INST    {3'h2, 7'h00}
 `define SLTU_INST   {3'h3, 7'h00}
 `define MUL_INST    {3'h0, 7'h01}
-`define MULH_INST   {3'h1, 7'h01}
+`define MULHU_INST  {3'h3, 7'h01}
 
 //
 //{funct3}, I-TYPE
@@ -117,18 +117,18 @@
 //
 // ALU function code input
 //
-`define	ALU_ADD   5'h00
-`define	ALU_SUB   5'h01
-`define	ALU_XOR   5'h02
-`define	ALU_OR    5'h03
-`define	ALU_AND   5'h04
-`define	ALU_SLL   5'h05
-`define	ALU_SRL   5'h06
-`define	ALU_SRA   5'h07
-`define	ALU_SLT   5'h08
-`define	ALU_SLTU  5'h09
-`define	ALU_MUL   5'h0a
-`define	ALU_MULH  5'h0b
+`define	ALU_ADD     5'h00
+`define	ALU_SUB     5'h01
+`define	ALU_XOR     5'h02
+`define	ALU_OR      5'h03
+`define	ALU_AND     5'h04
+`define	ALU_SLL     5'h05
+`define	ALU_SRL     5'h06
+`define	ALU_SRA     5'h07
+`define	ALU_SLT     5'h08
+`define	ALU_SLTU    5'h09
+`define	ALU_MUL     5'h0a
+`define	ALU_MULHU   5'h0b
 
 //
 // Memory bus commands control signals
