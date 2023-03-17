@@ -4,8 +4,11 @@
 
 module processor_tb;
 
+integer mulFile;
+integer mulhuFile;
+
 logic clk;
-logic rst;    
+logic rst;
 
 logic [4:0]  	pipeline_commit_wr_idx;
 logic [31:0] 	pipeline_commit_wr_data;
@@ -21,7 +24,7 @@ logic [31:0] 	proc2Dmem_addr;
 logic [1:0] 	proc2Dmem_command;
 logic [31:0]    proc2mem_data;
 
-// Outputs from IF-Stage 
+// Outputs from IF-Stage
 logic [31:0] 	if_PC_out;
 logic [31:0] 	if_NPC_out;
 logic [31:0] 	if_IR_out;
@@ -119,14 +122,35 @@ initial begin
 end
 
 initial begin
+    mulFile = $fopen("./mul.csv", "w");
+    $fclose(mulFile);
+    mulhuFile = $fopen("./mulhu.csv", "w");
+    $fclose(mulhuFile);
     rst=1;
     @(posedge clk);
     rst=0;
     for(int i=0;i<50000;i++) begin
-        @(posedge clk);    
+        @(posedge clk);
     end
     $stop;
 end
 
+always @(proc_module.id_stage_0.regf_0.registers[20]) begin
+    mulFile = $fopen("./mul.csv", "a");
+    $fdisplay(mulFile, "%h,%h,%h",
+    proc_module.id_stage_0.regf_0.registers[18],
+    proc_module.id_stage_0.regf_0.registers[19],
+    proc_module.id_stage_0.regf_0.registers[20]);
+    $fclose(mulFile);
+end
+
+always @(proc_module.id_stage_0.regf_0.registers[21]) begin
+    mulhuFile = $fopen("./mulhu.csv", "a");
+    $fdisplay(mulhuFile, "%h,%h,%h",
+    proc_module.id_stage_0.regf_0.registers[18],
+    proc_module.id_stage_0.regf_0.registers[19],
+    proc_module.id_stage_0.regf_0.registers[21]);
+    $fclose(mulhuFile);
+end
 
 endmodule

@@ -1,0 +1,9 @@
+# Reading pref.tcl
+# vsim -gui do 
+# Start time: 18:17:24 on Mar 17,2023
+# ** Error: (vsim-3170) Could not find 'do'.
+#         Searched libraries:
+#             C:/intelFPGA/projects/CA-Proccessor/rtl/simulation/work
+# Error loading design
+# End time: 18:17:24 on Mar 17,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
