@@ -6,6 +6,7 @@ module processor_tb;
 
 integer mulFile;
 integer mulhuFile;
+integer counter;
 
 logic clk;
 logic rst;
@@ -122,6 +123,7 @@ initial begin
 end
 
 initial begin
+    counter = 0;
     mulFile = $fopen("./mul.csv", "w");
     $fclose(mulFile);
     mulhuFile = $fopen("./mulhu.csv", "w");
@@ -151,6 +153,13 @@ always @(proc_module.id_stage_0.regf_0.registers[21]) begin
     proc_module.id_stage_0.regf_0.registers[19],
     proc_module.id_stage_0.regf_0.registers[21]);
     $fclose(mulhuFile);
+end
+
+always @(mem_wb_IR) begin
+    if (mem_wb_IR == 32'h0000006f)
+        counter++;
+    if (counter == 2)
+        $stop;
 end
 
 endmodule

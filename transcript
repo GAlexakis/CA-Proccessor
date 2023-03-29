@@ -1,0 +1,670 @@
+# Reading pref.tcl
+cd rtl/simulation
+do simulation.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:45:36 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# ** Error: (vlog-13069) ../processor/id_stage.sv(35): near ";": syntax error, unexpected ';', expecting ')'.
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# ** Error: (vlog-13069) ../processor/processor.sv(211): near ";": syntax error, unexpected ';', expecting ')'.
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# End time: 21:45:37 on Mar 29,2023, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./simulation.do line 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -f files_rtl.f"
+do simulation.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:46:09 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# ** Error: (vlog-13069) ../processor/id_stage.sv(35): near ";": syntax error, unexpected ';', expecting ')'.
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# End time: 21:46:09 on Mar 29,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./simulation.do line 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -f files_rtl.f"
+do simulation.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:46:49 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# ** Error: (vlog-13069) ../processor/id_stage.sv(202): near "output": syntax error, unexpected output, expecting ')'.
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# End time: 21:46:49 on Mar 29,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./simulation.do line 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -f files_rtl.f"
+do simulation.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:47:41 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# ** Error: (vlog-13069) ../processor/id_stage.sv(222): near "output": syntax error, unexpected output, expecting ')'.
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# End time: 21:47:41 on Mar 29,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./simulation.do line 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -f files_rtl.f"
+do simulation.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:48:11 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# ** Error: (vlog-13069) ../processor/id_stage.sv(222): near "output": syntax error, unexpected output, expecting ')'.
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# End time: 21:48:11 on Mar 29,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./simulation.do line 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -f files_rtl.f"
+do simulation.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:48:45 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 21:48:45 on Mar 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 21:48:45 on Mar 29,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 21:50:26 on Mar 29,2023, Elapsed time: 0:01:41
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:50:26 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 21:50:27 on Mar 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 21:50:27 on Mar 29,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:11:08 on Mar 29,2023, Elapsed time: 0:20:41
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:08 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:11:08 on Mar 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:11:08 on Mar 29,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:14:38 on Mar 29,2023, Elapsed time: 0:03:30
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:14:39 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:14:39 on Mar 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:14:39 on Mar 29,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:16:23 on Mar 29,2023, Elapsed time: 0:01:44
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:16:23 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:16:23 on Mar 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:16:23 on Mar 29,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 135 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:24:26 on Mar 29,2023, Elapsed time: 0:08:03
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:24:26 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:24:26 on Mar 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:24:26 on Mar 29,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:26:04 on Mar 29,2023, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:26:04 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:26:04 on Mar 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:26:04 on Mar 29,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+add wave -position insertpoint  \
+sim:/processor_tb/proc_module/id_stage_0/hazard_detector_0/stall
+do simulation.do
+# End time: 22:33:44 on Mar 29,2023, Elapsed time: 0:07:40
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:33:45 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:33:45 on Mar 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:33:45 on Mar 29,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:37:28 on Mar 29,2023, Elapsed time: 0:03:43
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:37:28 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:37:29 on Mar 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:37:29 on Mar 29,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:38:54 on Mar 29,2023, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:38:54 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:38:55 on Mar 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:38:55 on Mar 29,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:43:34 on Mar 29,2023, Elapsed time: 0:04:39
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:43:34 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# ** Error: (vlog-13069) ../processor/id_stage.sv(178): near "if": syntax error, unexpected if.
+# ** Error: (vlog-13069) ../processor/id_stage.sv(189): near "endcase": syntax error, unexpected endcase.
+# ** Error: ../processor/id_stage.sv(245): (vlog-2730) Undefined variable: 'if_id_IR'.
+# ** Error: ../processor/id_stage.sv(264): (vlog-2730) Undefined variable: 'mem_wb_valid_inst'.
+# ** Error: ../processor/id_stage.sv(264): (vlog-2730) Undefined variable: 'mem_wb_reg_wr'.
+# ** Error: ../processor/id_stage.sv(299): (vlog-2730) Undefined variable: 'id_reg_wr_out'.
+# ** Error: ../processor/id_stage.sv(310): (vlog-2730) Undefined variable: 'id_dest_reg_idx_out'.
+# ** Error: ../processor/id_stage.sv(339): (vlog-2730) Undefined variable: 'id_immediate_out'.
+# ** Error: ../processor/id_stage.sv(347): (vlog-2730) Undefined variable: 'if_id_PC'.
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# End time: 22:43:34 on Mar 29,2023, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./simulation.do line 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -f files_rtl.f"
+do simulation.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:44:08 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:44:08 on Mar 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:44:09 on Mar 29,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 595 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:46:35 on Mar 29,2023, Elapsed time: 0:02:26
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:46:35 on Mar 29,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:46:36 on Mar 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:46:36 on Mar 29,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 595 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+# End time: 22:59:00 on Mar 29,2023, Elapsed time: 0:12:24
+# Errors: 0, Warnings: 0

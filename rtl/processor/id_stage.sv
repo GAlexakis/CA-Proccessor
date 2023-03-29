@@ -2,12 +2,38 @@
 	`include "../sys_defs.vh"
 `endif
 
+//* Hazard detection
+
+module hazard_detector(
+	input logic [4:0] ra_id,
+	input logic [4:0] rb_id,
+	input logic [4:0] rd_ex_id,
+	input logic [4:0] rd_mem_id,
+	input logic [4:0] rd_wb_id,
+	output logic stall
+);
+	assign stall =
+	(
+		(ra_id == rd_ex_id 		&& rd_ex_id 	!= `ZERO_REG) ||
+		(ra_id == rd_mem_id 	&& rd_mem_id 	!= `ZERO_REG) ||
+		(ra_id == rd_wb_id 		&& rd_wb_id 	!= `ZERO_REG) ||
+
+		(rb_id == rd_ex_id 		&& rd_ex_id 	!= `ZERO_REG) ||
+		(rb_id == rd_mem_id 	&& rd_mem_id 	!= `ZERO_REG) ||
+		(rb_id == rd_wb_id 		&& rd_wb_id 	!= `ZERO_REG)
+	);
+endmodule
+
 //Decoder
 
 module inst_decoder(
 input [31:0] 		inst,
 input logic valid_inst_in,  // ignore inst when low, outputs will
 					        // reflect noop (except valid_inst)
+
+//* My inputs
+input logic 		stall,
+input logic			flash,
 
 output logic [1:0] 	opa_select,
 output logic [1:0] 	opb_select,
@@ -18,7 +44,7 @@ output logic 		illegal,    // non-zero on an illegal instruction
 output logic 		valid_inst  // for counting valid instructions executed
 );
 
-assign valid_inst =valid_inst_in & ~illegal;
+assign valid_inst =valid_inst_in & (~illegal) & (~stall) & (~flash);
 
 always_comb begin
 	// - invalid instructions should clear valid_inst.
@@ -41,20 +67,20 @@ always_comb begin
 			dest_reg = `DEST_IS_REGC;
 
 			case({inst[14:12], inst[31:25]})
-				`ADD_INST  	: alu_func = `ALU_ADD;   
-				`SUB_INST  	: alu_func = `ALU_SUB;    
-				`XOR_INST  	: alu_func = `ALU_XOR;   
-				`OR_INST   	: alu_func = `ALU_OR;   
-				`AND_INST  	: alu_func = `ALU_AND;   
-				`SLL_INST  	: alu_func = `ALU_SLL;   
-				`SRL_INST  	: alu_func = `ALU_SRL;   
-				`SRA_INST  	: alu_func = `ALU_SRA;   
-				`SLT_INST  	: alu_func = `ALU_SLT;   
+				`ADD_INST  	: alu_func = `ALU_ADD;
+				`SUB_INST  	: alu_func = `ALU_SUB;
+				`XOR_INST  	: alu_func = `ALU_XOR;
+				`OR_INST   	: alu_func = `ALU_OR;
+				`AND_INST  	: alu_func = `ALU_AND;
+				`SLL_INST  	: alu_func = `ALU_SLL;
+				`SRL_INST  	: alu_func = `ALU_SRL;
+				`SRA_INST  	: alu_func = `ALU_SRA;
+				`SLT_INST  	: alu_func = `ALU_SLT;
 				`SLTU_INST 	: alu_func = `ALU_SLTU;
 				`MUL_INST  	: alu_func = `ALU_MUL;
 				`MULHU_INST	: alu_func = `ALU_MULHU;
 				default: illegal = `TRUE;
-			endcase 
+			endcase
 		end //R-TYPE
 
 		`I_ARITH_TYPE: begin
@@ -69,7 +95,7 @@ always_comb begin
 				`ANDI_INST : alu_func = `ALU_AND;
 				`SLLI_INST : alu_func = `ALU_SLL;
 				`SRLI_INST, `SRAI_INST: begin
-					//This checks if any of the bits are 1 
+					//This checks if any of the bits are 1
 					//to distinguish between the 2 instructions
 					//because one has imm[5:11] = inst[25:30] = 0x00 and the other 0x20
 					//If the ISA changes this check might need to be modified
@@ -78,7 +104,7 @@ always_comb begin
 				`SLTI_INST  : alu_func = `ALU_SLT;
 				`SLTIU_INST : alu_func = `ALU_SLTU;
 				default: illegal = `TRUE;
-			endcase 
+			endcase
 		end //I_ARITH_TYPE
 
 		`I_LD_TYPE: begin
@@ -87,31 +113,31 @@ always_comb begin
 			dest_reg = `DEST_IS_REGC;
 			rd_mem = `TRUE;
 			alu_func = `ALU_ADD;
-			illegal=(inst[14:12]!=2)?`TRUE:`FALSE;			
+			illegal=(inst[14:12]!=2)?`TRUE:`FALSE;
 		end //I_LD_TYPE
 
 		`S_TYPE: begin
 			opa_select = `ALU_OPA_IS_REGA;
 			opb_select = `ALU_OPB_IS_IMM;
 			alu_func = `ALU_ADD;
-			
+
 			case(inst[14:12])
 				`SW_INST:   wr_mem = `TRUE;
 				default: illegal = `TRUE;
 			endcase
 		end //S_TYPE
-		
+
 		`B_TYPE: begin
 			opa_select = `ALU_OPA_IS_PC;
 			opb_select = `ALU_OPB_IS_IMM;
 			cond_branch = `TRUE;
-			
+
 			case(inst[14:12])
 				3'd2, 3'd3: illegal = `TRUE;
 				default: alu_func = `ALU_ADD;
 			endcase
 		end //B_TYPE
-		
+
 		`J_TYPE: begin
 			opa_select = `ALU_OPA_IS_PC;
 			opb_select = `ALU_OPB_IS_4;
@@ -119,53 +145,71 @@ always_comb begin
 			alu_func = `ALU_ADD;
 			uncond_branch = `TRUE;
 		end //J-TYPE
-		
+
 		`I_JAL_TYPE: begin
 			opa_select = `ALU_OPA_IS_PC;
 			opb_select = `ALU_OPB_IS_4;
 			dest_reg = `DEST_IS_REGC;
 			alu_func = `ALU_ADD;
 			uncond_branch = `TRUE;
-			
+
 			illegal = (inst[14:12] != 3'h0) ? `TRUE : `FALSE;
 		end //I_JAL_TYPE
-		
+
 		`U_LD_TYPE: begin
 			opa_select = `ALU_OPA_IS_ZR;
 			opb_select = `ALU_OPB_IS_IMM;
 			dest_reg = `DEST_IS_REGC;
 			alu_func = `ALU_ADD;
 		end //U_LD_TYPE
-		
+
 		`U_AUIPC_TYPE: begin
 			opa_select = `ALU_OPA_IS_PC;
 			opb_select = `ALU_OPB_IS_IMM;
 			dest_reg = `DEST_IS_REGC;
 			alu_func = `ALU_ADD;
 		end //U_AUIPC_TYPE
-		
+
 		`I_BREAK_TYPE: begin
 			illegal = (inst[31:20] != 12'h1); //if imm=0x1 it is a ebreak (environmental break)
 		end
-		
+
 		default: illegal = `TRUE;
-	endcase 
-end 
+	endcase
+
+		if (stall || flash) begin
+			opa_select = `ALU_OPA_IS_REGA;
+			opb_select = `ALU_OPB_IS_REGB;
+			alu_func = `ALU_ADD;
+			dest_reg = `DEST_NONE;
+			rd_mem = `FALSE;
+			wr_mem = 1'b0;
+			cond_branch = `FALSE;
+			uncond_branch = `FALSE;
+			illegal = `FALSE;
+		end
+end
 endmodule // inst_decoder
 
 
 
-//Instruction Decode Stage 
+//Instruction Decode Stage
 module id_stage(
 input logic 		clk,              		// system clk
 input logic 		rst,              		// system rst
 input logic [31:0] 	if_id_IR,            	// incoming instruction
 input logic [31:0]	if_id_PC,
-input logic	        mem_wb_valid_inst,   	 	//Does the instruction write to rd?
+input logic	        mem_wb_valid_inst,   	//Does the instruction write to rd?
 input logic	        mem_wb_reg_wr,   	 	//Does the instruction write to rd?
 input logic [4:0]	mem_wb_dest_reg_idx, 	//index of rd
 input logic [31:0] 	wb_reg_wr_data_out, 	// Reg write data from WB Stage
 input logic         if_id_valid_inst,
+
+//* My inputs
+input logic [4:0] 	rd_ex_idx,
+input logic [4:0] 	rd_mem_idx,
+input logic [4:0] 	rd_wb_idx,
+input logic 		flash,
 
 output logic [31:0] id_ra_value_out,    	// reg A value
 output logic [31:0] id_rb_value_out,    	// reg B value
@@ -184,20 +228,37 @@ output logic 	    id_wr_mem_out,          // does inst write memory?
 output logic 		cond_branch,
 output logic        uncond_branch,
 output logic       	id_illegal_out,
-output logic       	id_valid_inst_out	  	// is inst a valid instruction to be counted for CPI calculations?
+output logic       	id_valid_inst_out,	  	// is inst a valid instruction to be counted for CPI calculations?
+
+//* my ouputs
+output logic stall_out
+
 );
-   
+
 logic dest_reg_select;
 logic [31:0] rb_val;
 
 //instruction fields read from IF/ID pipeline register
-logic[4:0] ra_idx; 
-logic[4:0] rb_idx; 
-logic[4:0] rc_idx; 
+logic[4:0] ra_idx;
+logic[4:0] rb_idx;
+logic[4:0] rc_idx;
 
 assign ra_idx=if_id_IR[19:15];	// inst operand A register index
 assign rb_idx=if_id_IR[24:20];	// inst operand B register index
 assign rc_idx=if_id_IR[11:7];  // inst operand C register index
+
+//* my code
+logic id_stall;
+hazard_detector hazard_detector_0
+(
+	.ra_id		(ra_idx),
+	.rb_id		(rb_idx),
+	.rd_ex_id	(rd_ex_idx),
+	.rd_mem_id	(rd_mem_idx),
+	.rd_wb_id	(rd_wb_idx),
+	.stall		(id_stall)
+);
+assign stall_out = id_stall;
 // Instantiate the register file used by this pipeline
 
 logic write_en;
@@ -206,9 +267,9 @@ assign write_en=mem_wb_valid_inst & mem_wb_reg_wr;
 regfile regf_0(.clk		(clk),
 			   .rst		(rst),
 			   .rda_idx	(ra_idx),
-			   .rda_out	(id_ra_value_out), 
+			   .rda_out	(id_ra_value_out),
 			   .rdb_idx	(rb_idx),
-			   .rdb_out	(rb_val), 
+			   .rdb_out	(rb_val),
 			   .wr_en	(write_en),
 			   .wr_idx	(mem_wb_dest_reg_idx),
 			   .wr_data	(wb_reg_wr_data_out));
@@ -218,6 +279,11 @@ assign id_rb_value_out=rb_val;
 // instantiate the instruction inst_decoder
 inst_decoder inst_decoder_0(.inst	        (if_id_IR),
 							.valid_inst_in  (if_id_valid_inst),
+
+							//* My inputs
+							.stall			(id_stall),
+							.flash			(flash),
+
 							.opa_select		(id_opa_select_out),
 							.opb_select		(id_opb_select_out),
 							.alu_func		(id_alu_func_out),
@@ -253,14 +319,14 @@ end
 //set up possible immediates:
 //jmp_disp: 20-bit sign-extended immediate for jump displacement;
 //up_imm: 20-bit immediate << 12;
-//br_disp: sign-extended 12-bit immediate * 2 for branch displacement 
-//mem_disp: sign-extended 12-bit immediate for memory displacement 
+//br_disp: sign-extended 12-bit immediate * 2 for branch displacement
+//mem_disp: sign-extended 12-bit immediate for memory displacement
 //alu_imm: sign-extended 12-bit immediate for ALU ops
 logic[31:0] jmp_disp;
-logic[31:0] up_imm;	
-logic[31:0] br_disp; 	
-logic[31:0] mem_disp; 
-logic[31:0] alu_imm;	
+logic[31:0] up_imm;
+logic[31:0] br_disp;
+logic[31:0] mem_disp;
+logic[31:0] alu_imm;
 
 assign jmp_disp={{12{if_id_IR[31]}}, if_id_IR[19:12], if_id_IR[20], if_id_IR[30:21], 1'b0};
 assign up_imm = {if_id_IR[31:12], 12'b0};

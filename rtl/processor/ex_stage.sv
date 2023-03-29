@@ -18,6 +18,10 @@ input logic [31:0]  pc_add_opa,
 input logic [2:0]   id_ex_funct3,
 input logic 		uncond_branch,
 input logic 		cond_branch,
+
+//* My inputs
+input logic 		flash,
+
 //output
 output logic 		ex_take_branch_out,
 output logic [31:0] ex_target_PC_out,
@@ -47,7 +51,7 @@ always_comb begin : opB_mux
 		`ALU_OPB_IS_IMM: 		opb_mux_out = id_ex_imm;
 		`ALU_OPB_IS_4:			opb_mux_out = 32'h4;
 		default: 				opb_mux_out = id_ex_regb;
-	endcase 
+	endcase
 end
 
 assign alu_opa=opa_mux_out;
@@ -57,18 +61,18 @@ assign br_cond_opa=id_ex_rega;
 assign br_cond_opb=id_ex_regb;
 
 alu alu_0 (// Inputs
-		  .opa(alu_opa),
-		  .opb(alu_opb),
-		  .br_cond_opa(br_cond_opa),
-		  .br_cond_opb(br_cond_opb),
-		  .func(id_ex_alu_func),
-		  .id_ex_funct3(id_ex_funct3),
-		  .result(alu_result),
-		  .brcond_result(brcond_result));
+	.opa(alu_opa),
+	.opb(alu_opb),
+	.br_cond_opa(br_cond_opa),
+	.br_cond_opb(br_cond_opb),
+	.func(id_ex_alu_func),
+	.id_ex_funct3(id_ex_funct3),
+	.result(alu_result),
+	.brcond_result(brcond_result));
 
 assign ex_target_PC_out = pc_add_opa + id_ex_imm;
 
-assign ex_take_branch_out = (uncond_branch | (cond_branch & brcond_result)) & id_ex_valid_inst;
+assign ex_take_branch_out = (uncond_branch | (cond_branch & brcond_result)) & id_ex_valid_inst & (~flash);
 //
 
 assign ex_alu_result_out=alu_result;
@@ -98,7 +102,7 @@ output logic brcond_result
 logic [63:0] temp;
 assign temp = opa * opb;
 
-//result 
+//result
 always_comb begin
 	case (func)
 		//R-TYPE
@@ -109,13 +113,13 @@ always_comb begin
 		`ALU_AND: 	result = opa & opb;
 		`ALU_SLL: 	result = opa << opb[4:0];
 		`ALU_SRL: 	result = opa >> opb[4:0];
-		`ALU_SRA: 	result = $signed(opa) >>> opb[4:0]; 
+		`ALU_SRA: 	result = $signed(opa) >>> opb[4:0];
 		`ALU_SLT: 	result = {31'd0, ($signed(opa)< $signed(opb))};
 		`ALU_SLTU:	result = {31'd0, (opa < opb)};
 		`ALU_MUL:	result = temp[31:0];
 		`ALU_MULHU:	result = temp[63:32];
-		default: 	result = 32'hbaadbeef;  
-	endcase	
+		default: 	result = 32'hbaadbeef;
+	endcase
 end
 
 //br condition
@@ -127,7 +131,7 @@ always_comb begin
 		default: brcond_result = `FALSE;
 	endcase
 	//negate cond if func[0] is set
- 	if(id_ex_funct3[0]) 
+ 	if(id_ex_funct3[0])
 		brcond_result = ~brcond_result;
 
 end
