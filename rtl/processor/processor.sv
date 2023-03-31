@@ -169,7 +169,7 @@ if_stage if_stage_0 (
 //                                              //
 //////////////////////////////////////////////////
 //* updated enable
-assign if_id_enable = ~id_if_stall;
+assign if_id_enable = ~id_if_stall | ex_mem_take_branch;
 // assign if_id_enable = 1;
 
 always_ff @(posedge clk or posedge rst) begin

@@ -1,9 +1,2728 @@
 # Reading pref.tcl
-# vsim -gui do 
-# Start time: 18:17:24 on Mar 17,2023
-# ** Error: (vsim-3170) Could not find 'do'.
-#         Searched libraries:
-#             C:/intelFPGA/projects/CA-Proccessor/rtl/simulation/work
-# Error loading design
-# End time: 18:17:24 on Mar 17,2023, Elapsed time: 0:00:00
+ls
+# files_rtl.f       mul.csv          simulation.do  vsim.wlf    
+# final_output.dmp  mulhu.csv        testshex.txt   work        
+# memory.sv         processor_tb.sv  transcript                 
+do simulation.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:57:08 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 15:57:08 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 15:57:08 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 16:06:31 on Mar 30,2023, Elapsed time: 0:09:23
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:06:31 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 16:06:32 on Mar 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 16:06:32 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 32265 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 16:12:52 on Mar 30,2023, Elapsed time: 0:06:20
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:12:52 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 16:12:52 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 16:12:52 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 32265 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 16:20:22 on Mar 30,2023, Elapsed time: 0:07:30
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:22 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 16:20:22 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 16:20:22 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 22245 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 16:20:47 on Mar 30,2023, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:20:47 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 16:20:47 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 16:20:47 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 22245 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 16:26:48 on Mar 30,2023, Elapsed time: 0:06:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:26:48 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 16:26:48 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 16:26:48 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 44275 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 16:42:44 on Mar 30,2023, Elapsed time: 0:15:56
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:42:44 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 16:42:44 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 16:42:44 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 44275 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 16:54:26 on Mar 30,2023, Elapsed time: 0:11:42
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:54:26 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 16:54:26 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 16:54:26 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 44275 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 17:50:24 on Mar 30,2023, Elapsed time: 0:55:58
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:50:24 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 17:50:24 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 17:50:24 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 17:55:20 on Mar 30,2023, Elapsed time: 0:04:56
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:55:20 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 17:55:20 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 17:55:20 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 17:56:52 on Mar 30,2023, Elapsed time: 0:01:32
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:52 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 17:56:52 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 17:56:52 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:09:32 on Mar 30,2023, Elapsed time: 0:12:40
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:32 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:09:32 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:09:32 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:10:29 on Mar 30,2023, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:10:29 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:10:29 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:10:29 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 1905 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:13:48 on Mar 30,2023, Elapsed time: 0:03:19
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:13:48 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:13:48 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:13:48 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 2435 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:15:32 on Mar 30,2023, Elapsed time: 0:01:44
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:15:32 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:15:32 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:15:32 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 2435 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:18:50 on Mar 30,2023, Elapsed time: 0:03:18
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:18:50 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:18:50 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:18:51 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 4585 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:24:55 on Mar 30,2023, Elapsed time: 0:06:04
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:24:56 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:24:56 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:24:56 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 4585 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:25:58 on Mar 30,2023, Elapsed time: 0:01:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:25:58 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:25:58 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:25:58 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 4585 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:28:36 on Mar 30,2023, Elapsed time: 0:02:38
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:28:36 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:28:36 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:28:36 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 4585 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:35:04 on Mar 30,2023, Elapsed time: 0:06:28
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:35:04 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:35:05 on Mar 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:35:05 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 68885 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:37:24 on Mar 30,2023, Elapsed time: 0:02:19
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:37:24 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:37:25 on Mar 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:37:25 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 68885 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:39:50 on Mar 30,2023, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:39:50 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:39:50 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:39:50 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:41:11 on Mar 30,2023, Elapsed time: 0:01:21
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:41:11 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:41:11 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:41:11 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 68905 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:43:16 on Mar 30,2023, Elapsed time: 0:02:05
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:43:16 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:43:16 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:43:17 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:46:10 on Mar 30,2023, Elapsed time: 0:02:53
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:46:10 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:46:10 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:46:11 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 18:47:22 on Mar 30,2023, Elapsed time: 0:01:11
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:22 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:47:22 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:47:22 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 68905 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+00008537
+# [00008537]
+00050113
+# [00050113]
+03c000ef
+# invalid command name "03c000ef"
+0000006f
+# invalid command name "0000006f"
+00055703
+# [00055703]
+00375693
+# [00375693]
+00275793
+# [00275793]
+00d7c7b3
+# invalid command name "00d7c7b3"
+00f747b3
+# invalid command name "00f747b3"
+00575693
+# [00575693]
+00d7c7b3
+# invalid command name "00d7c7b3"
+0017f793
+# invalid command name "0017f793"
+00f79793
+# invalid command name "00f79793"
+00175713
+# [00175713]
+00e7e7b3
+# invalid command name "00e7e7b3"
+00f51023
+# invalid command name "00f51023"
+00008067
+# [00008067]
+00008837
+# [00008837]
+00008537
+# [00008537]
+0000b737
+# invalid command name "0000b737"
+fac80593
+# invalid command name "fac80593"
+ce170713
+# invalid command name "ce170713"
+ffc80813
+# invalid command name "ffc80813"
+c8c50893
+# invalid command name "c8c50893"
+00080693
+# [00080693]
+00375613
+# [00375613]
+00275793
+# [00275793]
+00c7c7b3
+# invalid command name "00c7c7b3"
+00f747b3
+# invalid command name "00f747b3"
+00575613
+# [00575613]
+
+00c7c7b3
+# invalid command name "00c7c7b3"
+
+0017f793
+# invalid command name "0017f793"
+
+40e50633
+# invalid command name "40e50633"
+
+00c6a023
+# invalid command name "00c6a023"
+
+00f79793
+# invalid command name "00f79793"
+
+00175713
+# [00175713]
+do simulation.do
+# End time: 18:54:35 on Mar 30,2023, Elapsed time: 0:07:13
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:54:35 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 18:54:35 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 18:54:35 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 68905 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 19:27:40 on Mar 30,2023, Elapsed time: 0:33:05
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:27:40 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 19:27:40 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 19:27:40 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Error: Invalid value to -offset switch: -5ps
+# Error in macro ./simulation.do line 22
+# Invalid value to -offset switch: -5ps
+#     while executing
+# "add wave -position end -radix hexadecimal -group Instructions -color #00ff00 -label fetch -offset -5ps sim:/processor_tb/if_IR_out"
+do simulation.do
+# End time: 19:28:20 on Mar 30,2023, Elapsed time: 0:00:40
 # Errors: 1, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:28:20 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 19:28:20 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 19:28:20 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(162)
+#    Time: 68905 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 162
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 21:02:27 on Mar 30,2023, Elapsed time: 1:34:07
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:02:27 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 21:02:27 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 21:02:27 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 21:15:42 on Mar 30,2023, Elapsed time: 0:13:15
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:15:42 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 21:15:43 on Mar 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 21:15:43 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+add wave -position insertpoint  \
+{sim:/processor_tb/DM/unified_memory[8190]}
+do simulation.do
+# End time: 21:39:39 on Mar 30,2023, Elapsed time: 0:23:56
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:39:39 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# ** Error: processor_tb.sv(172): (vlog-2730) Undefined variable: 'counter'.
+# End time: 21:39:39 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./simulation.do line 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -f files_rtl.f"
+do simulation.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:40:34 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 21:40:34 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 21:40:34 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[0] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[1] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[2] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[3] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[4] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[5] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[6] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[7] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[8] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[9] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[10] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[11] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[12] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[13] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[14] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[15] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[16] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[17] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[18] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[19] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[20] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[21] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[22] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[23] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[24] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[25] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[26] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[27] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[28] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[29] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[30] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[31] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[32] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[33] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[34] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[35] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[36] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[37] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[38] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[39] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[40] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[41] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[42] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[43] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[44] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[45] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[46] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[47] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[48] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[49] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[50] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[51] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[52] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[53] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[54] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[55] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[56] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[57] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[58] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[59] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[60] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[61] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[62] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[63] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[64] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[65] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[66] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[67] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[68] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[69] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[70] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[71] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[72] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[73] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[74] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[75] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[76] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[77] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[78] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[79] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[80] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[81] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[82] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[83] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[84] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[85] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[86] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[87] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[88] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[89] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[90] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[91] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[92] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[93] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[94] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[95] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[96] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[97] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[98] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[99] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[100] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[101] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[102] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[103] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[104] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[105] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[106] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[107] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[108] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[109] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[110] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[111] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[112] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[113] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[114] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[115] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[116] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[117] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[118] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[119] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[120] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[121] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[122] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[123] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[124] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[125] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[126] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[127] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[128] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[129] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[130] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[131] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[132] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[133] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[134] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[135] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[136] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[137] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[138] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[139] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[140] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[141] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[142] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[143] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[144] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[145] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[146] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[147] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[148] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[149] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[150] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[151] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[152] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[153] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[154] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[155] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[156] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[157] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[158] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[159] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[160] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[161] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[162] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[163] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[164] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[165] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[166] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[167] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[168] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[169] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[170] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[171] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[172] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[173] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[174] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[175] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[176] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[177] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[178] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[179] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[180] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[181] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[182] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[183] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[184] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[185] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[186] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[187] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[188] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[189] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[190] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[191] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[192] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[193] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[194] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[195] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[196] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[197] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[198] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Region: /processor_tb/genblk1[199] File: processor_tb.sv Line: 149
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Instance: /processor_tb File: processor_tb.sv Line: 140
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./simulation.do PAUSED at line 7
+do simulation.do
+# End time: 21:41:14 on Mar 30,2023, Elapsed time: 0:00:40
+# Errors: 201, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:41:15 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 21:41:15 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 21:41:15 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Error: (vsim-3043) Unresolved reference to 'mulFile'.
+#    Time: 0 ps  Iteration: 0  Instance: /processor_tb File: processor_tb.sv Line: 140
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./simulation.do PAUSED at line 7
+do simulation.do
+# End time: 21:41:51 on Mar 30,2023, Elapsed time: 0:00:36
+# Errors: 1, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:41:51 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 21:41:52 on Mar 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 21:41:52 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(130)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 130
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 21:48:44 on Mar 30,2023, Elapsed time: 0:06:52
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:48:44 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 21:48:44 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 21:48:44 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(136)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 136
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 21:50:43 on Mar 30,2023, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:50:43 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 21:50:44 on Mar 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 21:50:44 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 21:58:00 on Mar 30,2023, Elapsed time: 0:07:16
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:58:00 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 21:58:00 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 21:58:00 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(160)
+#    Time: 161105 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 160
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:12:49 on Mar 30,2023, Elapsed time: 0:14:49
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:50 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:12:50 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:12:50 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:14:23 on Mar 30,2023, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:14:23 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:14:23 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:14:23 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(145)
+#    Time: 225 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 145
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:16:22 on Mar 30,2023, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:16:22 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:16:22 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:16:22 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(137)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 137
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:40:57 on Mar 30,2023, Elapsed time: 0:24:35
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:40:57 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# ** Error: processor_tb.sv(141): (vlog-2730) Undefined variable: 'startA'.
+# End time: 22:40:57 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./simulation.do line 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -f files_rtl.f"
+do simulation.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:41:29 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:41:29 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:41:29 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(153)
+#    Time: 161005 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 153
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:48:23 on Mar 30,2023, Elapsed time: 0:06:54
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:48:23 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:48:23 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:48:23 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(157)
+#    Time: 565 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 157
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:51:06 on Mar 30,2023, Elapsed time: 0:02:43
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:51:06 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:51:06 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:51:06 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(153)
+#    Time: 525 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 153
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 22:56:52 on Mar 30,2023, Elapsed time: 0:05:46
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:56:52 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:56:52 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 22:56:53 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(153)
+#    Time: 515 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 153
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 23:03:32 on Mar 30,2023, Elapsed time: 0:06:39
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:03:32 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:03:32 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 23:03:32 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(153)
+#    Time: 515 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 153
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 23:05:48 on Mar 30,2023, Elapsed time: 0:02:16
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:05:48 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:05:48 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 23:05:48 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(153)
+#    Time: 1445 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 153
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 23:08:47 on Mar 30,2023, Elapsed time: 0:02:59
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:48 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:08:48 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 23:08:48 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(153)
+#    Time: 1445 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 153
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 23:10:17 on Mar 30,2023, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:10:17 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:10:17 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 23:10:17 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(153)
+#    Time: 1445 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 153
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 23:13:56 on Mar 30,2023, Elapsed time: 0:03:39
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:13:56 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:13:56 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 23:13:56 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(154)
+#    Time: 1445 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 154
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 23:16:07 on Mar 30,2023, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:16:08 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:16:08 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 23:16:08 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(157)
+#    Time: 1445 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 157
+# 0 ps
+# 100 ps
+do simulation.do
+# End time: 23:17:39 on Mar 30,2023, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:17:39 on Mar 30,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module hazard_detector
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:17:39 on Mar 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim processor_tb 
+# Start time: 23:17:39 on Mar 30,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.hazard_detector
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(152)
+#    Time: 1445 ps  Iteration: 2  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 152
+# 0 ps
+# 100 ps
+# End time: 23:19:38 on Mar 30,2023, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 0

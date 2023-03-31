@@ -4,9 +4,8 @@
 
 module processor_tb;
 
-integer mulFile;
-integer mulhuFile;
-integer counter;
+integer results;
+logic [199:0] startA;
 
 logic clk;
 logic rst;
@@ -123,43 +122,28 @@ initial begin
 end
 
 initial begin
-    counter = 0;
-    mulFile = $fopen("./mul.csv", "w");
-    $fclose(mulFile);
-    mulhuFile = $fopen("./mulhu.csv", "w");
-    $fclose(mulhuFile);
+    results = $fopen("./results.csv", "w");
+    $fclose(results);
     rst=1;
     @(posedge clk);
     rst=0;
-    for(int i=0;i<50000;i++) begin
+    for(int i=0;i<100000;i++) begin
         @(posedge clk);
     end
     $stop;
 end
 
-always @(proc_module.id_stage_0.regf_0.registers[20]) begin
-    mulFile = $fopen("./mul.csv", "a");
-    $fdisplay(mulFile, "%h,%h,%h",
-    proc_module.id_stage_0.regf_0.registers[18],
-    proc_module.id_stage_0.regf_0.registers[19],
-    proc_module.id_stage_0.regf_0.registers[20]);
-    $fclose(mulFile);
-end
-
-always @(proc_module.id_stage_0.regf_0.registers[21]) begin
-    mulhuFile = $fopen("./mulhu.csv", "a");
-    $fdisplay(mulhuFile, "%h,%h,%h",
-    proc_module.id_stage_0.regf_0.registers[18],
-    proc_module.id_stage_0.regf_0.registers[19],
-    proc_module.id_stage_0.regf_0.registers[21]);
-    $fclose(mulhuFile);
-end
-
 always @(mem_wb_IR) begin
-    if (mem_wb_IR == 32'h0000006f)
-        counter++;
-    if (counter == 2)
+    if (mem_wb_IR == 32'h00000000)
         $stop;
+    if (mem_wb_IR == 32'h0000006f) begin
+        for(int i = 0; i < 202; i++) begin
+            results = $fopen("./results.csv", "a");
+            $fdisplay(results,"%d", $signed(DM.unified_memory[6700-i]));
+            $fclose(results);
+        end
+        $stop;
+    end
 end
 
 endmodule
