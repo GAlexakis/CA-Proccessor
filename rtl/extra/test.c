@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+FILE* file;
+
 typedef struct Matrix
 {
     int rows;
@@ -8,12 +10,26 @@ typedef struct Matrix
     int* ptr;
 }
 matrix_t;
-int lfsr_8bit (unsigned char* lfsr)
+
+int lfsr_888bit (unsigned char* lfsr)
 {
     unsigned char bit;
     bit = ((*lfsr >> 0) ^ (*lfsr >> 2) ^ (*lfsr >> 3) ^ (*lfsr >> 4)) & 1u;
     *lfsr = (*lfsr >> 1) | (bit << 7);
     int result = 127 - *lfsr;
+    fprintf(file, "%d\n",result);
+    printf("%d\n",result);
+    return result;
+}
+
+int lfsr_8bit (unsigned int* lfsr)
+{
+    unsigned int bit;
+    bit = ((*lfsr >> 0) ^ (*lfsr >> 2) ^ (*lfsr >> 6) ^ (*lfsr >> 7)) & 1u;
+    *lfsr = (*lfsr >> 1) | (bit << 31);
+    int result = 2147483648 - *lfsr;
+    fprintf(file, "%d\n",result);
+    printf("%d\n",result);
     return result;
 }
 
@@ -33,6 +49,7 @@ matrix_t matmul (matrix_t a, matrix_t b)
             {
                 result.ptr[i*result.cols + j] += a.ptr[i*size + k]*b.ptr[k*b.cols + j];
             }
+            fprintf(file, "%d\n",result.ptr[i*result.cols + j]);
             printf("%d\n",result.ptr[i*result.cols + j]);
         }
     }
@@ -41,7 +58,9 @@ matrix_t matmul (matrix_t a, matrix_t b)
 
 int main()
 {
-    unsigned char lfsr = 100u;
+    file = fopen("results_compiler.txt", "w");
+
+    unsigned int lfsr = 100u;
     matrix_t A;
     A.rows = 1;
     A.cols = 100;
@@ -181,5 +200,7 @@ int main()
     free(matABCDEFGH.ptr);
     free(matABCDEFGHI.ptr);
     free(matABCDEFGHIJ.ptr);
+
+    fclose(file);
     return 0;
 }

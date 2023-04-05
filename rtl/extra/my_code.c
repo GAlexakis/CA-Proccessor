@@ -8,16 +8,16 @@ typedef struct Matrix
 matrix_t;
 
 int         mulf        (int a, int b);
-int         lfsr_8bit   (unsigned char* lfsr);
+int         lfsr_32bit   (unsigned char* lfsr);
 int         lfsr_16bit  (unsigned short* lfsr);
-int         lfsr_32bit  (unsigned int* lfsr);
+int         lfsr_8bit  (unsigned int* lfsr);
 matrix_t    matrixMul   (matrix_t a, matrix_t b, int start);
 
 int main ()
 {
-    unsigned char   lfsr_8 =    100u;
+    unsigned char   lfsr_32 =    100u;
     unsigned short  lfsr_16 =   100u;
-    unsigned int    lfsr_32 =   100u;
+    unsigned int    lfsr_8 =   100u;
 
     matrix_t matA = {1, 100, 4*8000};
     for(int i = 0; i < 4*matA.rows; i+=4)
@@ -158,7 +158,7 @@ matrix_t matrixMul (matrix_t a, matrix_t b, int start)
     return result;
 }
 
-int lfsr_8bit (unsigned char* lfsr)
+int lfsr_32bit (unsigned char* lfsr)
 {
     unsigned char bit;
     bit = ((*lfsr >> 0) ^ (*lfsr >> 2) ^ (*lfsr >> 3) ^ (*lfsr >> 4)) & 1u;
@@ -176,7 +176,7 @@ int lfsr_16bit (unsigned short* lfsr)
     return result;
 }
 
-int lfsr_32bit (unsigned int* lfsr)
+int lfsr_8bit (unsigned int* lfsr)
 {
     unsigned int bit;
     bit = ((*lfsr >> 0) ^ (*lfsr >> 2) ^ (*lfsr >> 6) ^ (*lfsr >> 7)) & 1u;

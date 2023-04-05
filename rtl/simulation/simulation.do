@@ -79,4 +79,5 @@ run -all
 
 wave zoom range 0ps 100ps
 
-./main32.exe
+./produce32.exe
+./compare32.exe

@@ -122,8 +122,6 @@ initial begin
 end
 
 initial begin
-    results = $fopen("./results.csv", "w");
-    $fclose(results);
     rst=1;
     @(posedge clk);
     rst=0;
@@ -137,11 +135,11 @@ always @(mem_wb_IR) begin
     if (mem_wb_IR == 32'h00000000)
         $stop;
     if (mem_wb_IR == 32'h0000006f) begin
-        for(int i = 0; i < 202; i++) begin
-            results = $fopen("./results.csv", "a");
-            $fdisplay(results,"%d", $signed(DM.unified_memory[6700-i]));
-            $fclose(results);
+        results = $fopen("./results_risc.txt", "w");
+        for(int i = 0; i < 1502; i++) begin
+            $fdisplay(results,"%d", $signed(DM.unified_memory[8000-i]));
         end
+        $fclose(results);
         $stop;
     end
 end
