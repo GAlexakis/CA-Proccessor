@@ -205,6 +205,10 @@ id_stage id_stage_0 (
 .if_id_valid_inst       (if_id_valid_inst),
 
 //* My inputs
+.ex_read_mem			(id_ex_rd_mem),
+.ex_result				(ex_alu_result_out),
+.mem_result				(mem_result_out),
+.wb_result				(wb_reg_wr_data_out),
 .rd_ex_idx				(id_ex_dest_reg_idx),
 .rd_mem_idx				(ex_mem_dest_reg_idx),
 .rd_wb_idx				(mem_wb_dest_reg_idx),
