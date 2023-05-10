@@ -8,6 +8,7 @@ typedef struct Matrix
 matrix_t;
 
 int         mulf        (int a, int b);
+int         test        ();
 int         lfsr_32bit   (unsigned char* lfsr);
 int         lfsr_16bit  (unsigned short* lfsr);
 int         lfsr_8bit  (unsigned int* lfsr);
@@ -15,6 +16,7 @@ matrix_t    matrixMul   (matrix_t a, matrix_t b, int start);
 
 int main ()
 {
+    test();
     unsigned char   lfsr_32 =    100u;
     unsigned short  lfsr_16 =   100u;
     unsigned int    lfsr_8 =   100u;

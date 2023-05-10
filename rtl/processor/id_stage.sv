@@ -34,6 +34,7 @@ module hazard_detector(
 
 endmodule
 
+
 //Decoder
 
 module inst_decoder(

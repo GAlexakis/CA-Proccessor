@@ -1,7 +1,7 @@
 # Reading pref.tcl
 do simulation.do
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:03:28 on May 08,2023
+# Start time: 22:10:54 on May 10,2023
 # vlog -reportprogress 300 -f files_rtl.f 
 # -- Compiling module if_stage
 # -- Compiling module regfile
@@ -18,10 +18,10 @@ do simulation.do
 # 
 # Top level modules:
 # 	processor_tb
-# End time: 10:03:28 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:10:54 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim processor_tb 
-# Start time: 10:03:28 on May 08,2023
+# Start time: 22:10:55 on May 10,2023
 # Loading sv_std.std
 # Loading work.processor_tb
 # Loading work.processor
@@ -37,9 +37,9 @@ do simulation.do
 # Loading work.mem
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: georg  Hostname: ASKOTINDERIN  ProcessID: 15572
-#           Attempting to use alternate WLF file "./wlftnmfn30".
+#           Attempting to use alternate WLF file "./wlfte15r5n".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftnmfn30
+#           Using alternate file: ./wlfte15r5n
 # ** Note: $stop    : processor_tb.sv(143)
 #    Time: 434255 ps  Iteration: 2  Instance: /processor_tb
 # Break in Module processor_tb at processor_tb.sv line 143
@@ -1548,11 +1548,13 @@ do simulation.do
 # -288261145
 # -1215763820
 # SUCCESS: ALL RESULTS EQUAL
+dp simulation.do
+# invalid command name "dp"
 do simulation.do
-# End time: 10:15:48 on May 08,2023, Elapsed time: 0:12:20
+# End time: 22:15:46 on May 10,2023, Elapsed time: 0:04:51
 # Errors: 0, Warnings: 2
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:15:48 on May 08,2023
+# Start time: 22:15:47 on May 10,2023
 # vlog -reportprogress 300 -f files_rtl.f 
 # -- Compiling module if_stage
 # -- Compiling module regfile
@@ -1569,10 +1571,10 @@ do simulation.do
 # 
 # Top level modules:
 # 	processor_tb
-# End time: 10:15:48 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:15:47 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim processor_tb 
-# Start time: 10:15:48 on May 08,2023
+# Start time: 22:15:47 on May 10,2023
 # Loading sv_std.std
 # Loading work.processor_tb
 # Loading work.processor
@@ -1588,9 +1590,9 @@ do simulation.do
 # Loading work.mem
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: georg  Hostname: ASKOTINDERIN  ProcessID: 15572
-#           Attempting to use alternate WLF file "./wlftsxcmi7".
+#           Attempting to use alternate WLF file "./wlft7gsta4".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftsxcmi7
+#           Using alternate file: ./wlft7gsta4
 # ** Note: $stop    : processor_tb.sv(143)
 #    Time: 434255 ps  Iteration: 2  Instance: /processor_tb
 # Break in Module processor_tb at processor_tb.sv line 143
@@ -3099,49 +3101,3 @@ do simulation.do
 # -288261145
 # -1215763820
 # SUCCESS: ALL RESULTS EQUAL
-do simulation.do
-# End time: 10:21:05 on May 08,2023, Elapsed time: 0:05:17
-# Errors: 0, Warnings: 2
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:21:05 on May 08,2023
-# vlog -reportprogress 300 -f files_rtl.f 
-# -- Compiling module if_stage
-# -- Compiling module regfile
-# -- Compiling module hazard_detector
-# -- Compiling module inst_decoder
-# -- Compiling module id_stage
-# -- Compiling module ex_stage
-# -- Compiling module alu
-# -- Compiling module mem_stage
-# -- Compiling module wb_stage
-# -- Compiling module processor
-# -- Compiling module mem
-# -- Compiling module processor_tb
-# 
-# Top level modules:
-# 	processor_tb
-# End time: 10:21:06 on May 08,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vsim processor_tb 
-# Start time: 10:21:06 on May 08,2023
-# Loading sv_std.std
-# Loading work.processor_tb
-# Loading work.processor
-# Loading work.if_stage
-# Loading work.id_stage
-# Loading work.hazard_detector
-# Loading work.regfile
-# Loading work.inst_decoder
-# Loading work.ex_stage
-# Loading work.alu
-# Loading work.mem_stage
-# Loading work.wb_stage
-# Loading work.mem
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: georg  Hostname: ASKOTINDERIN  ProcessID: 15572
-#           Attempting to use alternate WLF file "./wlft17gsxz".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft17gsxz
-# ** Note: $stop    : processor_tb.sv(143)
-#    Time: 434255 ps  Iteration: 2  Instance: /processor_tb
-# Break in Module processor_tb at processor_tb.sv line 143
